@@ -1,0 +1,44 @@
+===============================================================================
+🎯 CHINT DTSU666 EMULATOR (HOYMILES-EDITION) – INSTALLATIONSANLEITUNG
+===============================================================================
+Projekt: Einstein-Project (Klaus Reitbauer & Google Gemini)
+Lizenz:  GNU GPLv3 (Freie Software für die PV-Community)
+
+Diese Anleitung zeigt dir, wie du den Emulator kinderleicht, updatesicher 
+und vollautomatisch auf deinem Victron Venus OS (Cerbo GX / Raspberry Pi) 
+installierst.
+
+-------------------------------------------------------------------------------
+VORBEREITUNG & ENTPACKEN
+-------------------------------------------------------------------------------
+1. Kopiere die beiden Dateien aus diesem ZIP-Archiv:
+   -> hoymiles_chint_emulator.tar.gz
+   -> install.sh
+   per WinSCP oder FileZilla in irgendeinen Ordner auf deinem Cerbo GX
+   (z. B. nach /data/tmp/).
+
+2. Öffne dein Terminal (Putty / SSH) und wechsle in diesen Ordner.
+
+-------------------------------------------------------------------------------
+DIE 2-SCHRITT-INSTALLATION
+-------------------------------------------------------------------------------
+Führe nun einfach diese beiden Befehle nacheinander auf deiner Konsole aus:
+
+Schritt A (Rechte freigeben):
+chmod 755 install.sh
+
+Schritt B (Den automatischen Installer starten):
+./install.sh
+
+-------------------------------------------------------------------------------
+WAS PASSIERT JETZT?
+-------------------------------------------------------------------------------
+Das Skript 'install.sh' übernimmt ab hier komplett das Kommando:
+• Es entpackt alle Daten exakt an die richtige Stelle im System-Framework.
+• Es startet automatisch das interaktive 'setup.py' im Setup-Ordner.
+• Du wirst im Terminal Schritt für Schritt durch das Menü geführt (Boot-Setup,
+  Autostart-Prüfung, USB-Kabel-Finder und Daemontools-Hintergrunddienst).
+
+Nach dem Setup läuft dein Chint-Zähler vollautomatisch, ausfallsicher und 
+updatesicher im Hintergrund deiner Victron-Infrastruktur!
+===============================================================================
